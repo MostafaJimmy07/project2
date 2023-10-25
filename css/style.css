@@ -1,0 +1,437 @@
+body
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* .....................................HEADER.............................................. */
+header
+{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: inline;
+    float: left;
+    margin-left: -40px;
+}
+nav img{
+    height: 40px;
+    width: 140px;
+    float: left;   
+ }
+ul li
+    {
+    display: inline;
+    float: left;
+    margin-left: 40px;
+    }
+
+li a
+{
+    text-decoration: none;
+    color: rgb(95, 42, 16);
+    font-weight: bolder;
+    position: relative;
+
+}
+ul .li .active{
+}
+ul i 
+    {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+ul li a::after
+    {
+    content: "";
+    bottom: 100%;
+    left: 0;
+    background-color: rgb(17, 0, 255);
+    width: 0px;
+    height: 3px;
+    visibility: hidden;
+    position: absolute;
+    display: block;
+    transition: 0.5s;
+    overflow: auto;
+
+    }
+ul li a:hover::after
+    {
+    visibility: visible;
+    width: 100%;    
+    left:  0;
+    }
+
+ul li a::before
+    {
+    content: "";
+    top: 100%;
+    left: 0;
+    background-color: rgb(17, 0, 255);
+    width: 0px;
+    height: 3px;
+    visibility: hidden;
+    position: absolute;
+    display: block;
+    transition: 0.5s;
+    }
+ul li a:hover::before
+    {
+    visibility: visible;
+    width: 100%;    
+    left:  0;
+    }
+nav ul .li{
+    position: relative;
+}
+nav ul li .table{
+    min-width: 500px;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    columns: 100px 3;
+    column-span: all;
+    border: 2px solid black;
+    background-color: rgb(240, 193, 106);
+    z-index: 10;
+    overflow: hidden;
+
+}
+nav ul li .table p{
+    margin-top: 10px;
+}
+nav ul .li:hover .table{
+    visibility: visible;
+} 
+nav ul .cart:after{
+    content:attr(value);
+    font-size:20px;
+    color: #fff; 
+    background: red;
+    border-radius:50%;
+    padding: 0 5px;
+    position:relative;
+    left:-5px;
+    top:-10px;
+    opacity:0.9;
+}
+/* //////////////////////////////////MAIN SECTION///////////////////////////////////////////////////// */
+
+main section
+{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+section img
+{
+    width: 100%;
+    height: 460px;
+}
+/* /////////////////////////////////First Section////////////////////////////////////////////////////////// */
+.special-category
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.special-category .special-1
+{
+    margin-bottom: 30px;
+}
+.special-category .special-1 h1
+    {
+        margin-left: 420px;
+        font-size: 30px;
+        margin-top: 30px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+.special-category .special-1 .line   
+    {
+        width: 90px;
+        height: 2px;
+        margin-left: 490px;
+        margin-top: -15px;
+        background-color: rgb(141, 69, 22);
+        transition: 0.5s;
+    }
+.special-1:hover .line
+    {
+        transform: scaleX(1.5);
+        transition: 0.5s;
+    }
+.special-category .special-2
+{
+    margin: auto;
+}
+.special-2 .catg-img
+    {
+        margin: auto;
+        float: left;
+        width: 21%;
+    }
+.special-2 .catg-img img
+    {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .special-2 .img2
+    {
+      margin-left: 50px;
+      margin-right: 50px;    
+    }
+    .special-2 .img3
+    {
+      margin-right: 50px;    
+    }
+.special-2 .catg-img .img-info span{
+    margin-left: -1px;
+    }
+
+.special-2 .catg-img .img-info i{
+    margin-left: 40px;
+    visibility: hidden;
+    background-color: brown;
+    font-size: 20px;
+}   
+.catg-img:hover .img-info i{
+    visibility: visible;
+}
+/* /////////..............................SECOND Section...............////////////////////////////////// */
+
+section .second-container{
+    display: grid;
+    margin: auto;
+    width: 80%;
+    height: 500px;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap:  30px;
+    margin-top: 50px;
+}
+.second-container .left{
+    background-color: rgb(240, 234, 227);
+    width: 100%;
+    height: 70%;
+}
+.second-container .center {
+    background-image: url(../images/cms-banner-1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    transition: all 0.5s;
+}
+.second-container .right {
+    background-image: url(../images/cms-banner-2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    transition: all 0.5s;
+
+}
+.second-container .center:hover {
+ transform: scale(1.1);  
+}
+.second-container .right:hover {
+    transform: scale(1.1);  
+   }
+   
+
+/* ------------------------------------------------------------------------------------------------------ */
+    hr{
+        width: 80%;
+    }
+/* /////////////////////////////////THird Section////////////////////////////////////////////////////////// */
+.container
+{
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.icon1
+{
+    border-right: 1px solid black;
+
+}
+.pic1 {
+    background-image: url(../images/service-icon.png);
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    transition: all 0.7s;
+}
+
+
+.icon1:hover .pic1{ 
+background-position: center -86px;
+transition: all 0.4s;
+}
+
+
+
+
+.icon2
+{
+    border-right: 1px solid black;
+
+}
+.pic2 {
+    background-image: url(../images/service-icon.png);
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: center -180px;
+    transition: all 0.7s;
+
+}
+.icon2:hover .pic2{ 
+background-position: center -275px;
+transition: all 0.4s;
+}
+
+
+.icon3
+{
+    border-right: 1px solid black;
+
+}
+.pic3 {
+    background-image: url(../images/service-icon.png);
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: center -368px;
+    transition: all 0.7s;
+
+}
+.icon3:hover .pic3{ 
+background-position: center -460px;
+transition: all 0.4s;
+}
+
+
+
+.icon4
+{
+        border-right: 1px solid black;
+}
+.pic4 {
+    background-image: url(../images/service-icon.png);
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: center -550px;
+    transition: all 0.7s;
+
+}
+.icon4:hover .pic4{ 
+background-position: center -645px;
+transition: all 0.4s;
+}
+
+
+
+.icon5
+{
+}
+.pic5 {
+    background-image: url(../images/service-icon.png);
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: center -735px;
+    transition: all 0.7s;
+
+}
+.icon5:hover .pic5{ 
+background-position: center -830px;
+transition: all 0.4s;
+}
+
+.info h3,p{
+    margin-top: -10px;
+    text-align: center;
+}
+/* ---------------------------------FOURTH Section ---------------------------------------------------- */
+.featured-container
+{
+    width: 80%;
+    height: 700px;
+    margin: auto;
+    overflow: hidden;
+}
+.featured-container .featured-1
+{
+    margin-bottom: 30px;
+}
+.featured-container .featured-1 h1
+    {
+        margin-left: 420px;
+        font-size: 30px;
+        margin-top: 30px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+.featured-container .featured-1 .line   
+    {
+        width: 90px;
+        height: 2px;
+        margin-left: 490px;
+        margin-top: -15px;
+        background-color: rgb(141, 69, 22);
+        transition: 0.5s;
+    }
+.featured-1:hover .line
+    {
+        transform: scaleX(1.5);
+        transition: 0.5s;
+    }
+    span{
+       
+        margin-left: 150px;
+    }
+
+
+
+    .container2{
+        display: grid;
+        width: 80%;
+        margin: auto;
+        margin-top: -500px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-gap:  10px;
+    }
+    
+    .div1{
+        position: relative;
+    }
+    .Featured-img{
+        position: relative;
+        width: 100%;
+    }
+    .Featured-img img{
+        margin: auto;
+        width: 100%;
+    
+    }
+    .overlay-img{
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0s;
+    }
+    
+    
+    
+    
+    .div1:hover .overlay-img{
+        visibility: visible;
+        transform: rotateY(180deg);
+        transition: all 0.1s;
+        opacity: 0.9;
+    }
